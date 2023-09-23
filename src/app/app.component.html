@@ -1,6 +1,7 @@
 <h1>Welcome</h1>
 
 <div>
+  <hr />
   <select
     #mySelect
     (change)="featurePicked(mySelect.value)"
@@ -11,4 +12,15 @@
   <app-switchable-view
     [data]="selectedData"
   ></app-switchable-view>
+  <hr />
+  <select
+    #myMonsterSpellSelect
+    (change)="monsterSpellPicked(myMonsterSpellSelect.value)"
+  >
+    <option value="0">monsters</option>
+    <option value="1">spells</option>
+  </select>
+  <app-factory-view
+    [data]="selectedMonsterSpellData"
+  ></app-factory-view>
 </div>

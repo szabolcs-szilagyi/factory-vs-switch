@@ -5,7 +5,7 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
   templateUrl: './switchable-view.component.html',
   styleUrls: ['./switchable-view.component.css']
 })
-export class SwitchableViewComponent implements OnInit, OnChanges{
+export class SwitchableViewComponent implements OnInit, OnChanges {
   @Input() data: any;
   public color = 'red';
 
@@ -14,13 +14,13 @@ export class SwitchableViewComponent implements OnInit, OnChanges{
   private updateViewConfig() {
     switch (this.data.dataType) {
       case 'character-class':
-        this.color = 'blue';
+        this.color = 'lightblue';
         break;
       case 'item-feature':
-        this.color = 'green';
+        this.color = 'lightgreen';
         break;
       default:
-        this.color = 'grey';
+        this.color = 'red';
         break;
     }
   }
