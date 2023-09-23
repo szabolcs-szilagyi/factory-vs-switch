@@ -3,7 +3,6 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 @Component({
   selector: 'app-switchable-view',
   templateUrl: './switchable-view.component.html',
-  styleUrls: ['./switchable-view.component.css']
 })
 export class SwitchableViewComponent implements OnInit, OnChanges {
   @Input() data: any;

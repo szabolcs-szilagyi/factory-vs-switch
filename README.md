@@ -1,35 +1,20 @@
-# FactoryOverSwitches
+# Factory vs Switches
 
-This project was generated with [Angular
-CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This demo repository meant to demonstrate the differences, when using a
+`swtich-case` (or `if-elseif-else`) versus a factory pattern.
 
-## Development server
+In this repo you can see how simple and easy to follow the solution that uses
+`switch-case` solution. But also when you compare it with the `factory`
+implementaion you can see how rigid is the naive solution. As soon as you need
+to add a bit of costumization to the `switch-case` solution you will end up
+adding `if` cases one after the other.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app
-will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can
-also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the
-`dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via
-[Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To
-use this command, you need to first add a package that implements end-to-end
-testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular
-CLI Overview and Command Reference](https://angular.io/cli) page.
+Note that I'm not suggesting that all `switch-case` solutions are bad! They are
+good upto the point where you don't need any extra costumizations and till there
+are just a handfull of options. Its okay to start out with a simple
+`switch-case` solution, but as soon as you have customizations or adding the
+4th, 5th case coming in, then you should refactor it. This is true from the
+other side as well: the pattern shown here has a few indirection, that will make
+it hard to understand at first glance, specially if you have no experience with
+it. So if you have 2-3 cases to cover a switch-case is cleaner and easier to
+understand.

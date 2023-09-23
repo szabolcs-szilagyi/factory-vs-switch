@@ -7,7 +7,6 @@ import { SpellsComponent } from './spells/spells.component';
 @Component({
   selector: 'app-factory-view',
   templateUrl: './factory-view.component.html',
-  styleUrls: ['./factory-view.component.css']
 })
 export class FactoryViewComponent implements OnInit, OnChanges {
   @Input() data!: any;
