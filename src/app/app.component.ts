@@ -89,7 +89,27 @@ export class AppComponent {
           "url": "/api/spells/illusory-script"
         },
       ]
-    }
+    },
+    {
+      dataType: 'races',
+      data: [
+        {
+          "index": "dragonborn",
+          "name": "Dragonborn",
+          "url": "/api/races/dragonborn"
+        },
+        {
+          "index": "dwarf",
+          "name": "Dwarf",
+          "url": "/api/races/dwarf"
+        },
+        {
+          "index": "elf",
+          "name": "Elf",
+          "url": "/api/races/elf"
+        },
+      ],
+    },
   ];
 
 
