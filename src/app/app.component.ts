@@ -113,7 +113,7 @@ export class AppComponent {
   ];
 
 
-  title = 'factory-over-switches';
+  title = 'factory-vs-switches';
   selectedData = this.collectedSwitchData[0];
   selectedMonsterSpellData = this.collectedFactoryData[0];
 
