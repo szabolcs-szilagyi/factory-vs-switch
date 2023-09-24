@@ -26,4 +26,7 @@ export class RacesComponent implements OnInit {
       })
   }
 
+  jsonStringify(json: Record<string, any>): string {
+    return JSON.stringify(json, null, '  ');
+  }
 }

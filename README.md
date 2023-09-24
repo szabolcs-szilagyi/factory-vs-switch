@@ -21,6 +21,9 @@ hard to understand at first glance, specially if you have no experience with it.
 So if you have 2-3 cases to cover a switch-case is cleaner and easier to
 understand.
 
+Example for customization with the factory pattern is the `races` component:
+data is passed down, but then further enhanced with extra details.
+
 The example data for this repo is used from
 [dnd5eapi](https://www.dnd5eapi.co/). Nope, I don't play DnD, but really like to
 listen to the following two podcasts:

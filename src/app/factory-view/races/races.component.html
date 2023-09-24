@@ -1,9 +1,13 @@
 <h2>{{ data.dataType }}</h2>
 
-<div *ngFor="let race of details | keyvalue">
-  <h3>{{ race['value'].name }}</h3>
-  <h4>Age</h4>
-  <p>{{ race['value'].age }}</p>
-  <h4>Alignment</h4>
-  <p>{{ race['value'].alignment }}</p>
+<div class="race" *ngFor="let race of data.data">
+  <div class="raw">
+    <pre>{{ jsonStringify(race) }}</pre>
+  </div>
+  <div class="details">
+    <h4>Age</h4>
+    <p>{{ details[race.index].age }}</p>
+    <h4>Alignment</h4>
+    <p>{{ details[race.index].alignment }}</p>
+  </div>
 </div>
