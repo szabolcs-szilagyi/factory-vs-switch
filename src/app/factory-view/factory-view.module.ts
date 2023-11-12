@@ -5,7 +5,6 @@ import { FactoryViewComponent } from './factory-view.component';
 import { MonstersComponent } from './monsters/monsters.component';
 import { SpellsComponent } from './spells/spells.component';
 import { ProxyChildDirective } from './proxy-child.directive';
-import { FactoryConfig } from './factory-config';
 import { RacesComponent } from './races/races.component';
 
 
@@ -21,17 +20,7 @@ import { RacesComponent } from './races/races.component';
     CommonModule,
     HttpClientModule,
   ],
-  providers: [
-    {
-      provide: FactoryConfig,
-      useValue: {
-        monsters: MonstersComponent,
-        spells: SpellsComponent,
-        races: RacesComponent,
-        default: MonstersComponent,
-      }
-    }
-  ],
+  providers: [],
   exports: [FactoryViewComponent]
 })
 export class FactoryViewModule { }
