@@ -4,7 +4,7 @@
   <div class="raw">
     <pre>{{ jsonStringify(race) }}</pre>
   </div>
-  <div class="details">
+  <div class="details" *ngIf="details[race.index]">
     <h4>Age</h4>
     <p>{{ details[race.index].age }}</p>
     <h4>Alignment</h4>
